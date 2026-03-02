@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas Seguras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Creador de Contraseña</h1>
+
+        <div class="display-container">
+            <span id="password-display">P4$5W0rD!</span>
+            <button id="copy-btn">Copiar</button>
+        </div>
+
+        <div class="config-container">
+            <div class="range-header">
+                <span>Longitud de caracteres</span>
+                <span id="length-value">12</span>
+            </div>
+            <input type="range" id="length-slider" min="8" max="20" value="12">
+
+            <div class="options">
+                <label><input type="checkbox" id="uppercase" checked> Incluir Mayúsculas</label>
+                <label><input type="checkbox" id="lowercase" checked> Incluir Minúsculas</label>
+                <label><input type="checkbox" id="numbers" checked> Incluir Números</label>
+                <label><input type="checkbox" id="symbols"> Incluir Símbolos</label>
+            </div>
+
+            <div class="strength-meter">
+                <span>FUERZA</span>
+                <div id="strength-text">MEDIA</div>
+            </div>
+
+            <button id="generate-btn">GENERAR →</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
